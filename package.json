@@ -1,0 +1,30 @@
+{
+  "name": "militara-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm run build",
+    "start": "node index.js",
+    "install": "cd client && npm install",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/militara106/react-profile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/militara106/react-profile/issues"
+  },
+  "homepage": "https://github.com/militara106/react-profile#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "framer": "^1.1.7",
+    "nodemailer": "^6.7.0"
+  }
+}

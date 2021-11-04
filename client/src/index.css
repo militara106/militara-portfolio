@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Monoton|News+Cycle&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+    font-family: "News Cycle", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: #272727 !important; */
+
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-shadow: 2px 2px 11px rgba(0,0,0,0.5) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h3{
+  font-size: 120% !important;
+}
+
+h4{
+  font-size: 100% !important;
+}
+
+.row {
+  height: 100vh;
+}
+
+.fixedRight{
+  position: fixed;
+  background-color: red;
+  width: 0px;
+  height: 100%;
+}
+
+section{
+  height: 100vh;
+  transition: 1s;
+}
+
+.fullPageContainer{
+  background-color: #282828;
+  box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.75);
+}
+
+/* Nav */
+.navName{
+  text-align: center;
+  font-size: 200%;
+  font-family: "Monoton", cursive;
+  color: white;
+  margin-top: 1rem;
+  margin-left: -.7rem !important;
+  border-bottom: 1px solid white;
+  width: 14.5vw;
+}
+
+
+/* Home */
+
+.homeImage{
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.homeDesc{
+  white-space: normal;
+}
+
+/* Portfolio */
+
+.projectContainer{
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+}
+
+.projectContainer:hover{
+  transition: .2s;
+}
+
+.projectImage{
+  width: 140px;
+  height: auto;
+  margin: auto;
+}
+
+.projectDescription{
+  font-size: 60%;
+  width: 50%;
+}
+
+.alwaysTop{
+  z-index: 999;
+}
+
+/* Contact Page */
+form{
+  font-size: 60%;
+  margin: auto;
+  width: 80%;
+  text-align: left;
+}
+
+/* Non-Mobile Screen */
+@media only screen and (min-width: 768px) {
+
+  .navName{
+    font-size: 400%;
+    width: 118px;
+    margin-left: 0rem !important;
+  }
+
+  .leftSlide{
+    position: relative;
+    right: 10%;
+  }
+
+  .scrollSpy{
+    margin-left: 5.5rem;
+  }
+
+  .homeImage{
+    width: 40%;
+  }
+
+  .homeDesc{
+    padding: 5rem;
+    padding-top: 1rem;
+  }
+
+  .mainText{
+      font-size: 180%;
+  }
+
+  .projectImage{
+    width: 20%;  
+  }
+
+  .projectDescription{
+    font-size: 60%;
+  }
+}

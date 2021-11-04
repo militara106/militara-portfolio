@@ -1,0 +1,47 @@
+nav{
+    height: 100%;
+    font-size: 110%;
+}
+
+ul{
+    text-align: center;
+}
+
+.navbar{
+    padding: 0 !important;
+    background: none !important;
+}
+
+.verticalText{
+    transform: rotate(90deg);
+    padding: 0 !important;
+}
+
+.navbar-nav{
+    color: white !important;
+}
+
+.active{
+    background: none !important;
+    color: rgba(255,255,255,.5) !important;
+}
+
+.active>.nav-link{
+    color: white !important;
+}
+
+.nav-item{
+    line-height: 4;
+}
+
+.nav-itemSmall{
+    line-height: 3;
+}
+
+/* Non-Mobile Screen */
+@media only screen and (min-width: 768px) {
+    nav{
+        font-size: 150%;
+    }
+  }
+  
